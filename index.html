@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portal Sekolah Sederhana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1>Login Portal Sekolah</h1>
+  <div id="login-area">
+    <label for="username">Username:</label><br />
+    <input type="text" id="username" /><br /><br />
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" /><br /><br />
+    <label for="role">Pilih Role:</label><br />
+    <select id="role">
+      <option value="">-- Pilih Role --</option>
+      <option value="admin">Admin</option>
+      <option value="tutor">Tutor</option>
+      <option value="peserta">Peserta</option>
+    </select><br /><br />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="dashboard" class="hidden">
+    <button onclick="logout()">Logout</button>
+    <h2 id="dashboard-title"></h2>
+    <ul id="menu-list"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
